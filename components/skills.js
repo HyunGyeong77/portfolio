@@ -1,4 +1,4 @@
-import {text} from '/texts/skillsTxt.js';
+import {text} from '../texts/skillsTxt.js';
 
 export function skills() {
     const layout = document.querySelector(".skills_layout");

@@ -1,4 +1,4 @@
-import {text} from '/texts/heroTxt.js';
+import {text} from '../texts/heroTxt.js';
 
 export function hero() {
     const wrap = document.querySelector(".hero_wrap");
