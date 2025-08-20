@@ -1,0 +1,27 @@
+@use '../level' as *;
+@use '../variables' as *;
+@use '../media' as *;
+
+.intro_wrap {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $black;
+    width: 100%;
+    height: 100dvh;
+    z-index: $index_forward100;
+    overflow:hidden;
+    cursor: none;
+
+    > p {
+        position: absolute;
+        color: $white;
+        font-size: clamp(2rem, 4.5vw, 4rem);
+        width: -moz-max-content;
+        width: max-content;
+        opacity: 0;
+    }
+}
+  

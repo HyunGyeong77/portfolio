@@ -1,0 +1,21 @@
+@use '../variables' as *;
+
+.hero_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100dvh;
+    background: $black;
+    overflow-x: hidden;
+
+    > p {
+        font-size: clamp(1rem, 11.3vw, 14rem);
+        font-weight: bold;
+        cursor: default;
+
+        &:last-child {
+        text-align: right;
+        }
+    }
+}
+  

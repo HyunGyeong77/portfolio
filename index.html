@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BGH Website Portfolio" />
+    <title>Portfolio</title>
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- //script -->
+    <!-- link -->
+    <link rel="stylesheet" href="styles/css/style.css">
+    <!-- //link -->
+</head>
+<body>
+    <div id="app">
+        <div class="intro_wrap"></div>
+        <div id="cursor" class="cursor_wrap"></div>
+        <header class="header_wrap">
+            <div class="header_desktop">
+                <h2 class="header_logo">BGH</h2>
+                <ul>
+                    <li>
+                        <a href="#Hero">Home</a>
+                    </li>
+                    <li>
+                        <a href="#About">About</a>
+                    </li>
+                    <li>
+                        <a href="#Projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#Skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#Contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="header_mobile_menuOpenBtn">
+                <img src="icons/mobile_menu.svg" alt="mobile_menu_svg" />
+            </button>
+            <div class="header_mobile">
+                <button class="header_mobile_menuCloseBtn">
+                    <img src="icons/mobile_cancel.svg" alt="mobile_cancel_svg" />
+                </button>
+                <ul>
+                    <li>
+                        <a href="#Hero">Home</a>
+                    </li>
+                    <li>
+                        <a href="#About">About</a>
+                    </li>
+                    <li>
+                        <a href="#Projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#Skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#Contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section id="Hero" class="hero_wrap"></section>
+            <section id="About" class="about_wrap">
+                <div>
+                    <h2>About Me</h2>
+                    <div></div>
+                    <p>
+                        웹사이트를 만드는 과정에서 문제가 해결되었을 때 큰 보람을 느낍니다.
+                        <br />처음 웹 퍼블리싱을 시작했을 때, 반응형 웹 디자인만으로도 벅차게 느껴졌습니다.
+                        <br />하지만, 포기하지 않고 하나씩 문제를 해결하며 기술을 익히고 성장했습니다.
+                        <br />노력은 결국 배신하지 않는다는 걸 깨달으며, 매번 새로운 도전이 지금의 더 나은 퍼블리셔로 만들었다고 생각합니다.
+                    </p>
+                    <div></div>
+                </div>
+            </section>
+            <section id="Projects" class="projects_wrap">
+                <div class="projects_sticky"></div>
+            </section>
+            <section id="Skills" class="skills_wrap">
+                <div class="skills_layout"></div>
+            </section>
+            <section id="Contact" class="contact_wrap"> 
+                <h2>CONTACT</h2>
+                <div>
+                    <div>
+                        <p>프로젝트 협업이나 궁금한 점이 있으시다면<br> 언제든지 연락해주세요!</p>
+                        <ul>
+                            <li>✉ <a href="https://mail.google.com/mail/?view=cm&fs=1&to=qorudgus99@gmail.com" target="_blank">qorudgus99@gmail.com</a></li>
+                            <li>💼 <a href="https://github.com/hyungyeong77" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                    <form class="contact_form">
+                        <div>
+                            <input type="text" id="name" placeholder="이름" required />
+                            <input type="email" id="email" placeholder="이메일" required />
+                        </div>
+                        <textarea id="message" placeholder="메시지" required></textarea>
+                        <input type="submit" value="Send" />
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer_wrap">
+            <span>© 2025 HyunGyeong Bae. All rights reserved.</span>
+        </footer>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
