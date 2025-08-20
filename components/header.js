@@ -1,4 +1,4 @@
-import {text} from '../texts/headerTxt.js';
+import {text} from '/texts/headerTxt.js';
 
 export function header() {
     const wrap = document.querySelector(".header_wrap");

@@ -1,4 +1,4 @@
-import {text} from '../texts/projectsTxt.js';
+import {text} from '/texts/projectsTxt.js';
 
 export function projects() {
     const wrap = document.querySelector(".projects_wrap");
