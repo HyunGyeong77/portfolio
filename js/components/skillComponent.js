@@ -1,5 +1,5 @@
-import {text} from '/js/texts/skillsTxt.js';
-import {fieldset_anim} from '/js/animations/skillAnimation.js';
+import {text} from '../texts/skillsTxt.js';
+import {fieldset_anim} from '../animations/skillAnimation.js';
 
 export default function skillComponents() {
     const layout = document.querySelector(".skills_layout");

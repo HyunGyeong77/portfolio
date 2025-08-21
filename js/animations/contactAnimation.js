@@ -1,5 +1,3 @@
-
-
 export default function contactAnimations() {
     form_anim();
 }

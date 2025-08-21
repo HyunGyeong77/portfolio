@@ -1,5 +1,5 @@
-import {text} from '/js/texts/heroTxt.js';
-import {text_anim} from '/js/animations/heroAnimation.js';
+import {text} from '../texts/heroTxt.js';
+import {text_anim} from '../animations/heroAnimation.js';
 
 export default function heroComponents() {
     const wrap = document.querySelector(".hero_wrap");

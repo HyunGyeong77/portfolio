@@ -1,4 +1,4 @@
-import {text} from '/js/texts/headerTxt.js';
+import {text} from '../texts/headerTxt.js';
 
 export default function headerComponents() {
     timeUpdate();
