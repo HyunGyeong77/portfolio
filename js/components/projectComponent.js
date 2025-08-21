@@ -1,4 +1,4 @@
-import {text} from '../texts/projectTxt.js';
+import {text} from '/portfolio/js/texts/projectTxt.js';
 
 export default function projectComponents() {
     pages();

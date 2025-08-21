@@ -1,8 +1,11 @@
+import scrollInteractions, {animationFrameId} from './scrollInteraction.js';
+
 export default function headerInteractions() {
     const wrap = document.querySelector(".header_wrap");
 
     mobile_menuOpen(wrap);
     mobile_menuClose(wrap);
+    menu_linkClick(wrap);
 }
 
 function mobile_menuOpen(wrap) {
@@ -18,5 +21,22 @@ function mobile_menuClose(wrap) {
     mobile_menuCloseBtn.addEventListener("click", () => {
         wrap.classList.remove("open");
         wrap.classList.add("close");
+    });
+}
+
+function menu_linkClick(wrap) {
+    wrap.querySelectorAll("a").forEach((item) => {
+        item.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            cancelAnimationFrame(animationFrameId);
+
+            const target_href = item.getAttribute("href");
+            window.location.href = target_href;
+
+            setTimeout(() => {
+                scrollInteractions();
+            }, 1000);
+        });
     });
 }
