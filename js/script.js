@@ -1,6 +1,6 @@
-import initAnimations from './animations/index.js';
-import initInteractions from './interactions/index.js';
-import initComponents from './components/index.js';
+import initAnimations from '/portfolio/js/animations/index.js';
+import initInteractions from '/portfolio/js/interactions/index.js';
+import initComponents from '/portfolio/js/components/index.js';
 
 initAnimations();
 initInteractions();
