@@ -1,6 +1,10 @@
-import {text} from '/texts/projectsTxt.js';
+import {text} from '/js/texts/projectTxt.js';
 
-export function projects() {
+export default function projectComponents() {
+    pages();
+}
+
+function pages() {
     const wrap = document.querySelector(".projects_wrap");
     const sticky = document.querySelector(".projects_sticky");
 
@@ -84,31 +88,5 @@ export function projects() {
         project_li.append(title_p, type_p, githubSites_ul, language_ul, content_ul);
 
         sticky.appendChild(ul);
-    });
-
-    project_anim(wrap);
-}
-
-function project_anim(wrap) {
-    window.addEventListener("DOMContentLoaded", () => {
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: wrap,
-                start: () => `top+=100 top`,
-                end: () => `${wrap.clientHeight - window.innerHeight}px top`,
-                scrub: true,
-            }
-        });
-
-        const project_select = (index) => {
-            tl.fromTo(document.querySelector(`.projects_project${index}`),
-            {bottom: "0", filter: "brightness(1)"}, {bottom: "100%", filter: "brightness(0.7)"});
-        }
-
-        Object.keys(text).map((_, index) => {
-            if(index !== (Object.keys(text).length - 1)) {
-                project_select(index);
-            }
-        })
     });
 }

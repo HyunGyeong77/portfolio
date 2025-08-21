@@ -1,8 +1,4 @@
-export function about() {
-    about_anim();
-}
-
-function about_anim() {
+export default function aboutAnimations() {
     const wrap = document.querySelector(".about_wrap");
     const wrap_nextChild = wrap.children[0];
 

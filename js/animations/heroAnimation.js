@@ -1,16 +1,5 @@
-import {text} from '/texts/heroTxt.js';
-
-export function hero() {
+export default function heroAnimations() {
     const wrap = document.querySelector(".hero_wrap");
-
-    text.map((item, index) => {
-        const p = document.createElement("p");
-        p.innerText = item;
-        p.className = `hero_txt${index + 1}`;
-
-        text_anim(p, wrap, index);
-        wrap.appendChild(p);
-    });
 
     wrap_anim(wrap);
 }
@@ -35,7 +24,7 @@ function wrap_anim(wrap) {
     )
 }
 
-function text_anim(p, wrap, index) {
+export function text_anim(p, wrap, index) {
     gsap.fromTo(p, 
         { color: "#ffffff" },
         {

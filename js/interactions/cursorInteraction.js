@@ -1,9 +1,9 @@
-let isMaxScroll = false;
-let isMaxScroll_value = "";
-
-export function cursor() {
+export default function cursorInteractions() {
     mobileCheck();
 }
+
+let isMaxScroll = false;
+let isMaxScroll_value = "";
 
 function mobileCheck() {
     const resizeHandler = () => {

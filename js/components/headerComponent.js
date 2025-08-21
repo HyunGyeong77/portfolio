@@ -1,12 +1,7 @@
-import {text} from '/texts/headerTxt.js';
+import {text} from '/js/texts/headerTxt.js';
 
-export function header() {
-    const wrap = document.querySelector(".header_wrap");
-
+export default function headerComponents() {
     timeUpdate();
-    mobileMenu_mouseHandler(wrap);
-    projects_into(wrap);
-    projects_leave(wrap);
 }
 
 function timeUpdate() {
@@ -65,84 +60,4 @@ function timeUpdate() {
     }, 1000);
 
     formatted();
-}
-
-function projects_into(wrap) {
-    gsap.fromTo(wrap, {
-        y: "0",
-        opacity: "1",
-        visibility: "visible",
-    }, {
-        y: "-100%",
-        opacity: "0",
-        visibility: "hidden",
-        scrollTrigger: {
-            trigger: document.querySelector(".projects_wrap"),
-            start: "top-=70px top",
-            end: "top top",
-            scrub: true,
-            onEnter: () => {
-                wrap.classList.remove("open");
-                wrap.classList.add("close");
-            }
-        }
-    });
-}
-
-function projects_leave(wrap) {
-    ScrollTrigger.create({
-        trigger: document.querySelector(".projects_wrap"),
-        start: "bottom top",
-        end: "bottom top",
-        onEnter: () => {
-            gsap.fromTo(wrap, {
-                y: "-100%",
-                opacity: "0",
-                visibility: "hidden"
-            }, {
-                y: "0",
-                opacity: "1",
-                visibility: "visible",
-                duration: "0"
-            })
-        },
-        onEnterBack: () => {
-            gsap.fromTo(wrap, {
-                y: "0",
-                opacity: "1",
-                visibility: "visible"
-            }, {
-                y: "-100%",
-                opacity: "0",
-                visibility: "hidden",
-                duration: "0"
-            });
-
-            wrap.classList.remove("open");
-            wrap.classList.add("close");
-        }
-    });
-}
-
-function mobileMenu_mouseHandler(wrap) {
-    const mobile_openBtn = () => {
-        const mobile_menuOpenBtn = document.querySelector(".header_mobile_menuOpenBtn");
-    
-        mobile_menuOpenBtn.addEventListener("click", () => {
-            wrap.classList.add("open");
-            wrap.classList.remove("close");
-        });
-    }
-    
-    const mobile_closeBtn = () => {
-        const mobile_menuCloseBtn = document.querySelector(".header_mobile_menuCloseBtn");
-    
-        mobile_menuCloseBtn.addEventListener("click", () => {
-            wrap.classList.remove("open");
-            wrap.classList.add("close");
-        });
-    }
-
-    mobile_openBtn();
-    mobile_closeBtn();
 }
