@@ -6,7 +6,7 @@ import projectAnimations from './projectAnimation.js';
 import contactAnimations from './contactAnimation.js';
 
 export default function initAnimations() {
-    // introAnimations();
+    introAnimations();
     headerAnimations();
     heroAnimations();
     aboutAnimations();

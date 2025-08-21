@@ -5,7 +5,7 @@ import projectComponents from "./projectComponent.js";
 import skillComponents from "./skillComponent.js";
 
 export default function initComponents() {
-    // introComponents();
+    introComponents();
     headerComponents();
     heroComponents();
     projectComponents();
