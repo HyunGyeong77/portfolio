@@ -16,14 +16,14 @@
 .header_wrap > .header_desktop > .header_logo {
   font-size: 3rem;
 }
-.header_wrap > .header_desktop > ul:nth-child(2) {
+.header_wrap > .header_desktop > nav > ul {
   display: flex;
   gap: 3rem;
 }
-.header_wrap > .header_desktop > ul:nth-child(2) > li > a {
+.header_wrap > .header_desktop > nav > ul > li > a {
   font-size: 1.2rem;
 }
-.header_wrap > .header_desktop > ul:nth-child(3) > li:last-child > p {
+.header_wrap > .header_desktop > ul > li:last-child > p {
   text-align: right;
 }
 .header_wrap > .header_mobile_menuOpenBtn, .header_wrap > .header_mobile {
@@ -66,7 +66,8 @@
   .header_wrap > .header_mobile > button:hover {
     cursor: pointer;
   }
-  .header_wrap > .header_desktop > ul:nth-child(2), .header_wrap > .header_desktop > ul:nth-child(3) {
+  .header_wrap > .header_desktop > nav,
+  .header_wrap > .header_desktop > ul {
     display: none;
   }
   .header_wrap > .header_mobile_menuOpenBtn {
@@ -94,7 +95,7 @@
     background: none;
     border: none;
   }
-  .header_wrap > .header_mobile > ul {
+  .header_wrap > .header_mobile > nav > ul {
     display: flex;
     gap: 1rem;
   }
@@ -129,16 +130,16 @@
     width: inherit;
     height: inherit;
   }
-  .header_wrap > .header_mobile > ul:nth-child(2) {
+  .header_wrap > .header_mobile > nav > ul {
     position: absolute;
     top: 1rem;
     flex-direction: column;
     gap: 0.3vw;
   }
-  .header_wrap > .header_mobile > ul:nth-child(2) > li > a {
+  .header_wrap > .header_mobile > nav > ul > li > a {
     font-size: clamp(0.7rem, 4vw, 1rem);
   }
-  .header_wrap > .header_mobile > ul:nth-child(3) {
+  .header_wrap > .header_mobile > ul {
     display: none;
   }
 }
@@ -543,12 +544,12 @@
 .contact_wrap > div > div > p {
   font-size: 1.8rem;
 }
-.contact_wrap > div > div > ul {
+.contact_wrap > div > div > nav > ul {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
 }
-.contact_wrap > div > div > ul > li:first-child {
+.contact_wrap > div > div > nav > ul > li:first-child {
   text-indent: 4px;
 }
 .contact_wrap > div > form {
@@ -629,7 +630,7 @@
   .contact_wrap > div > div > p {
     font-size: max(0.9rem, 6vw);
   }
-  .contact_wrap > div > div > ul > li > a {
+  .contact_wrap > div > div > nav > ul > li > a {
     font-size: 0.9rem;
   }
 }
