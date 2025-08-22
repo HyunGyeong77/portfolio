@@ -1,9 +1,11 @@
+import {lenis} from "./scrollInteraction.js";
+
 export default function cursorInteractions() {
     mobileCheck();
 }
 
-let isMaxScroll = false;
-let isMaxScroll_value = "";
+let isMaxScroll;
+let isTagMouseOver;
 
 function mobileCheck() {
     const resizeHandler = () => {
@@ -75,19 +77,20 @@ function mouseHover(wrap) {
         const textAreas = document.querySelectorAll("textarea");
 
         const mouseHandler = (boolean, value) => () => {
-            wrap.style.setProperty("--content", boolean ? `'${value}'` : isMaxScroll_value);
+            isTagMouseOver = boolean;
+            wrap.style.setProperty("--content", boolean ? `'${value}'` : `'${isMaxScroll}'`);
         }
         
         const eventListener = (tags, value) => {
             tags.forEach((item) => {
-                item.addEventListener("mouseenter", mouseHandler(true, value));
+                item.addEventListener("mouseover", mouseHandler(true, value));
                 item.addEventListener("mouseleave", mouseHandler(false));
             });
         }
 
         const inputEventListener = (tags) => {
             tags.forEach((item) => {
-                item.addEventListener("mouseenter", mouseHandler(true, item.type !== "submit" ? "write" : "send"));
+                item.addEventListener("mouseover", mouseHandler(true, item.type !== "submit" ? "write" : "send"));
                 item.addEventListener("mouseleave", mouseHandler(false));
             })
         }
@@ -100,18 +103,11 @@ function mouseHover(wrap) {
 }
 
 function contentChange(wrap) {
-    const scrollValue = () => {
-        const {scrollY, innerHeight} = window;
-        const {scrollHeight} = document.documentElement;
-        isMaxScroll = (scrollY + innerHeight) >= scrollHeight;
-        isMaxScroll_value = isMaxScroll ? `"end"` : `"scroll"`;
+    lenis.on("scroll", ({scroll, limit}) => {
+        isMaxScroll = scroll >= (limit - 50) ? "end" : "scroll";
 
-        wrap.style.setProperty("--content", isMaxScroll_value);
-    }
-
-    window.addEventListener("scroll", () => {
-        requestAnimationFrame(scrollValue);
-    });
-
-    scrollValue();
+        if(!isTagMouseOver) {
+            wrap.style.setProperty("--content", `'${isMaxScroll}'`);
+        }
+    })
 }

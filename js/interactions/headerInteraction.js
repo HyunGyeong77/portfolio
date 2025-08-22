@@ -1,4 +1,4 @@
-import scrollInteractions, {animationFrameId} from './scrollInteraction.js';
+import {lenis} from './scrollInteraction.js';
 
 export default function headerInteractions() {
     const wrap = document.querySelector(".header_wrap");
@@ -29,14 +29,8 @@ function menu_linkClick(wrap) {
         item.addEventListener("click", (e) => {
             e.preventDefault();
 
-            cancelAnimationFrame(animationFrameId);
-
             const target_href = item.getAttribute("href");
-            window.location.href = target_href;
-
-            setTimeout(() => {
-                scrollInteractions();
-            }, 1000);
+            lenis.scrollTo(target_href);
         });
     });
 }

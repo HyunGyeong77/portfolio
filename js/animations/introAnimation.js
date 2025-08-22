@@ -1,3 +1,5 @@
+import {lenis} from '../interactions/scrollInteraction.js';
+
 export default function introAnimations() {
     window.addEventListener("DOMContentLoaded", () => {
         const wrap = document.querySelector(".intro_wrap");
@@ -12,7 +14,10 @@ export default function introAnimations() {
                 duration: 1, 
                 repeat: 1, 
                 yoyo: true,
-                onStart: () => document.querySelector("body").style.overflowY = "hidden"
+                onStart: () => {
+                    lenis.stop();
+                    document.querySelector("body").style.overflowY = "hidden";
+                }
             }
         );
 
@@ -27,7 +32,10 @@ export default function introAnimations() {
             {
                 height: 0, 
                 duration: 0.5,
-                onComplete: () => document.querySelector("body").style.overflowY = "unset"
+                onComplete: () => {
+                    lenis.start();
+                    document.querySelector("body").style.overflowY = "unset";
+                }
             },
         )
     });
