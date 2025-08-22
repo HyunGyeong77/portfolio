@@ -1,4 +1,4 @@
-import {text} from '/portfolio/js/texts/introTxt.js';
+import {text} from '../texts/introTxt.js';
 
 export default function introComponents() {
     const wrap = document.querySelector(".intro_wrap");

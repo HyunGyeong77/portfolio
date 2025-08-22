@@ -1,4 +1,4 @@
-import {text} from '/portfolio/js/texts/projectTxt.js';
+import {text} from '../texts/projectTxt.js';
 
 export default function projectAnimations() {
     project_scrollChange();

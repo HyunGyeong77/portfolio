@@ -6,7 +6,7 @@ export const text = {
         github: "https://github.com/HyunGyeong77/hodadoc",
         language: ["Next.js", "React", "SCSS", "TS"],
         content: ["[개발중]", "반응형", "Interactive"],
-        video: "/portfolio/assets/videos/project1.mp4",
+        video: "/assets/videos/project1.mp4",
     },
     project2: {
         title: "JBFG",
@@ -15,7 +15,7 @@ export const text = {
         github: "https://github.com/HyunGyeong77/jbfg",
         language: ["Next.js", "React", "SCSS", "TS"],
         content: ["반응형", "Interactive"],
-        video: "/portfolio/assets/videos/project2.mp4",
+        video: "/assets/videos/project2.mp4",
     },
     project3: {
         title: "Starbucks",
@@ -24,7 +24,7 @@ export const text = {
         github: "https://github.com/HyunGyeong77/starbucks",
         language: ["React", "SCSS", "TS"],
         content: ["반응형", "Interactive"],
-        video: "/portfolio/assets/videos/project3.mp4",
+        video: "/assets/videos/project3.mp4",
     },
     project4: {
         title: "Jwimovie",
@@ -33,7 +33,7 @@ export const text = {
         github: "https://github.com/HyunGyeong77/jwimovie",
         language: ["React", "SCSS", "TS"],
         content: ["고정형", "Interactive"],
-        video: "/portfolio/assets/videos/project4.mp4",
+        video: "/assets/videos/project4.mp4",
     },
     project5: {
         title: "Sweat",
@@ -42,6 +42,6 @@ export const text = {
         github: "https://github.com/HyunGyeong77/sweat",
         language: ["React", "CSS", "SCSS", "TS"],
         content: ["반응형", "Interactive"],
-        video: "/portfolio/assets/videos/project5.mp4",
+        video: "/assets/videos/project5.mp4",
     },
 }
