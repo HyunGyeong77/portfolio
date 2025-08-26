@@ -5,7 +5,7 @@ export const text = {
         githubPage: "https://hyungyeong77.github.io/hodadoc",
         github: "https://github.com/HyunGyeong77/hodadoc",
         language: ["Next.js", "React", "SCSS", "TS"],
-        content: ["[개발중]", "반응형", "Interactive"],
+        content: ["반응형", "Interactive"],
         video: "assets/videos/project1.mp4",
     },
     project2: {

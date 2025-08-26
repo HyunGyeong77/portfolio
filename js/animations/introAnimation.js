@@ -3,40 +3,32 @@ import {lenis} from '../interactions/scrollInteraction.js';
 export default function introAnimations() {
     window.addEventListener("DOMContentLoaded", () => {
         const wrap = document.querySelector(".intro_wrap");
+        const div = wrap.children[0];
         const tl = gsap.timeline();
+
+        tl.add(() => {
+            lenis.stop();
+            document.querySelector("body").style.overflowY = "hidden";
+        }, 0);
         
         tl.fromTo(
-            wrap.querySelector(".intro_txt1"),
-            {x: -200, opacity: 0},
+            div,
+            {y: 0},
             {
-                x: 0, 
-                opacity: 1,
-                duration: 1, 
-                repeat: 1, 
-                yoyo: true,
-                onStart: () => {
-                    lenis.stop();
-                    document.querySelector("body").style.overflowY = "hidden";
-                }
+                y: -30, 
+                duration:1,
+                delay:0.5,
             }
         );
 
-        tl.fromTo(
-            wrap.querySelector(".intro_txt2"),
-            {x: 200, opacity: 0},
-            {x: 0, opacity: 1, duration: 1, repeat: 1, yoyo: true}
-        );
-
-        tl.to(
-            wrap,
-            {
-                height: 0, 
-                duration: 0.5,
-                onComplete: () => {
-                    lenis.start();
-                    document.querySelector("body").style.overflowY = "unset";
-                }
-            },
-        )
+        tl.fromTo(wrap, {
+            y:"0",
+        }, {
+            y:"-100%",
+            onComplete: () => {
+                lenis.start();
+                document.querySelector("body").style.overflowY = "auto";
+            }
+        })
     });
 }

@@ -29,6 +29,16 @@ function pages() {
         github_a.target = "_blank";
         github_a.rel = "noopener noreferrer";
 
+        if(index !== 0) {
+            githubPage_a.onfocus = () => {
+                const beforeProject = window.innerHeight * 2;
+
+                window.scrollTo({
+                    top: beforeProject + ((window.innerHeight * 1.25) * index)
+                });
+            }
+        }
+
         const githubPage_li = document.createElement("li");
         const github_li = document.createElement("li");
         githubPage_li.appendChild(githubPage_a);

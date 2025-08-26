@@ -12,7 +12,7 @@ function project_scrollChange() {
                 trigger: wrap,
                 start: () => `top+=100 top`,
                 end: () => `${wrap.clientHeight - window.innerHeight}px top`,
-                scrub: true,
+                scrub: true
             }
         });
 
