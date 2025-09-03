@@ -93,6 +93,7 @@ function pages() {
         const ul = document.createElement("ul");
         const project_li = document.createElement("li");
         ul.className = `projects_project${index}`;
+        ul.id = item.title.charAt(0).toUpperCase() + item.title.slice(1).toLowerCase();
         ul.style.zIndex = `-${index + 1}`;
         ul.append(video_li, project_li, page_li);
         project_li.append(title_p, type_p, githubSites_ul, language_ul, content_ul);

@@ -1,47 +1,56 @@
 export const text = {
     project1: {
+        title: "NAVER",
+        type: "Clone",
+        githubPage: "https://hyungyeong77.github.io/naver",
+        github: "https://github.com/HyunGyeong77/naver",
+        language: ["HTML", "SCSS", "JS"],
+        content: ["[개발중]", "적응형", "Interactive"],
+        video: "https://mblogvideo-phinf.pstatic.net/MjAyMjEyMjhfMjM2/MDAxNjcyMjAzODAxODM2.JAamcnhF0Aj_n5SzgkCFFIBYyOaw7gO_sQierHoJSJsg.C_9JieUbKDtTcmEpAyJMWvhq-ZFN0WVhjNbomUn9ZBYg.GIF.naver_diary/0623_%EC%9E%A5%EB%A7%88%EC%8B%9C%EC%9E%91.gif?type=mp4w800"
+    },
+    project2: {
         title: "Hodadoc",
         type: "Develop",
         githubPage: "https://hyungyeong77.github.io/hodadoc",
         github: "https://github.com/HyunGyeong77/hodadoc",
         language: ["Next.js", "React", "SCSS", "TS"],
         content: ["반응형", "Interactive"],
-        video: "assets/videos/project1.mp4",
+        video: "assets/videos/project2.mp4",
     },
-    project2: {
+    project3: {
         title: "JBFG",
         type: "Clone",
         githubPage: "https://hyungyeong77.github.io/jbfg",
         github: "https://github.com/HyunGyeong77/jbfg",
         language: ["Next.js", "React", "SCSS", "TS"],
         content: ["반응형", "Interactive"],
-        video: "assets/videos/project2.mp4",
+        video: "assets/videos/project3.mp4",
     },
-    project3: {
+    project4: {
         title: "Starbucks",
         type: "Clone",
         githubPage: "https://hyungyeong77.github.io/starbucks",
         github: "https://github.com/HyunGyeong77/starbucks",
         language: ["React", "SCSS", "TS"],
         content: ["반응형", "Interactive"],
-        video: "assets/videos/project3.mp4",
+        video: "assets/videos/project4.mp4",
     },
-    project4: {
+    project5: {
         title: "Jwimovie",
         type: "Develop",
         githubPage: "https://hyungyeong77.github.io/jwimovie",
         github: "https://github.com/HyunGyeong77/jwimovie",
         language: ["React", "SCSS", "TS"],
         content: ["고정형", "Interactive"],
-        video: "assets/videos/project4.mp4",
+        video: "assets/videos/project5.mp4",
     },
-    project5: {
+    project6: {
         title: "Sweat",
         type: "Develop",
         githubPage: "https://hyungyeong77.github.io/sweat",
         github: "https://github.com/HyunGyeong77/sweat",
         language: ["React", "CSS", "SCSS", "TS"],
         content: ["반응형", "Interactive"],
-        video: "assets/videos/project5.mp4",
+        video: "assets/videos/project6.mp4",
     },
 }
