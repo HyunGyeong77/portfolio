@@ -1,8 +1,8 @@
-import introComponents from "./introComponent.js";
-import headerComponents from "./headerComponent.js";
-import heroComponents from "./heroComponent.js";
-import projectComponents from "./projectComponent.js";
-import skillComponents from "./skillComponent.js";
+import introComponents from "./intro-component.js";
+import headerComponents from "./header-component.js";
+import heroComponents from "./hero-component.js";
+import projectComponents from "./project-component.js";
+import skillComponents from "./skill-component.js";
 
 export default function initComponents() {
     introComponents();

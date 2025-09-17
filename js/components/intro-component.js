@@ -1,7 +1,7 @@
-import {text} from '../texts/introTxt.js';
+import {text} from '../texts/intro-txt.js';
 
 export default function introComponents() {
-    const wrap = document.querySelector(".intro_wrap");
+    const wrap = document.querySelector(".intro-wrap");
 
     text.forEach((text, index) => {
         const p = document.createElement("p");

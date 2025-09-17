@@ -1,5 +1,5 @@
 export default function heroAnimations() {
-    const wrap = document.querySelector(".hero_wrap");
+    const wrap = document.querySelector(".hero-wrap");
 
     wrap_anim(wrap);
 }
@@ -18,7 +18,7 @@ function wrap_anim(wrap) {
             },
             onUpdate: function() {
                 const currentColor = gsap.getProperty(wrap, "backgroundColor");
-                document.querySelector(".about_wrap").style.backgroundColor = currentColor;
+                document.querySelector(".about-wrap").style.backgroundColor = currentColor;
             }
         }
     )

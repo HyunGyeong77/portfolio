@@ -1,5 +1,5 @@
 export default function contactInteractions() {
-    const from = document.querySelector(".contact_form");
+    const from = document.querySelector(".contact-form");
     from.addEventListener("submit", function(e) {
         e.preventDefault();
     

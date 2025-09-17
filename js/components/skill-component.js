@@ -1,8 +1,8 @@
 import {text} from '../texts/skillsTxt.js';
-import {fieldset_anim} from '../animations/skillAnimation.js';
+import {fieldset_anim} from '../animations/skill-animation.js';
 
 export default function skillComponents() {
-    const layout = document.querySelector(".skills_layout");
+    const layout = document.querySelector(".skills-layout");
 
     Object.keys(text).map((item) => {
         const legend = document.createElement("legend");

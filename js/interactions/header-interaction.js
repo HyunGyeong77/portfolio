@@ -1,7 +1,7 @@
-import {lenis} from './scrollInteraction.js';
+import {lenis} from './scroll-interaction.js';
 
 export default function headerInteractions() {
-    const wrap = document.querySelector(".header_wrap");
+    const wrap = document.querySelector(".header-wrap");
 
     mobile_menuOpen(wrap);
     mobile_menuClose(wrap);
@@ -9,7 +9,7 @@ export default function headerInteractions() {
 }
 
 function mobile_menuOpen(wrap) {
-    const mobile_menuOpenBtn = document.querySelector(".header_mobile_menuOpenBtn");
+    const mobile_menuOpenBtn = document.querySelector(".header-mobile-menuOpenBtn");
     mobile_menuOpenBtn.addEventListener("click", () => {
         wrap.classList.add("open");
         wrap.classList.remove("close");
@@ -17,8 +17,8 @@ function mobile_menuOpen(wrap) {
 }
 
 function mobile_menuClose(wrap) {
-    const mobile_menuCloseBtn = document.querySelector(".header_mobile_menuCloseBtn");
-    mobile_menuCloseBtn.addEventListener("click", () => {
+    const mobileMenuCloseBtn = document.querySelector(".header-mobile-menuCloseBtn");
+    mobileMenuCloseBtn.addEventListener("click", () => {
         wrap.classList.remove("open");
         wrap.classList.add("close");
     });

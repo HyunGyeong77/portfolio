@@ -1,5 +1,5 @@
 export default function aboutAnimations() {
-    const wrap = document.querySelector(".about_wrap");
+    const wrap = document.querySelector(".about-wrap");
     const wrap_nextChild = wrap.children[0];
 
     gsap.fromTo(wrap_nextChild, 

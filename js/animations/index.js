@@ -1,9 +1,9 @@
-import introAnimations from './introAnimation.js';
-import headerAnimations from './headerAnimation.js';
-import heroAnimations from './heroAnimation.js';
-import aboutAnimations from './aboutAnimation.js';
-import projectAnimations from './projectAnimation.js';
-import contactAnimations from './contactAnimation.js';
+import introAnimations from './intro-animation.js';
+import headerAnimations from './header-animation.js';
+import heroAnimations from './hero-animation.js';
+import aboutAnimations from './about-animation.js';
+import projectAnimations from './project-animation.js';
+import contactAnimations from './contact-animation.js';
 
 export default function initAnimations() {
     introAnimations();

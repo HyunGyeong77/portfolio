@@ -1,8 +1,8 @@
-import {lenis} from '../interactions/scrollInteraction.js';
+import {lenis} from '../interactions/scroll-interaction.js';
 
 export default function introAnimations() {
     window.addEventListener("DOMContentLoaded", () => {
-        const wrap = document.querySelector(".intro_wrap");
+        const wrap = document.querySelector(".intro-wrap");
         const div = wrap.children[0];
         const tl = gsap.timeline();
 

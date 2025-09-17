@@ -1,4 +1,4 @@
-import {text} from '../texts/headerTxt.js';
+import {text} from '../texts/header-txt.js';
 
 export default function headerComponents() {
     timeUpdate();
@@ -50,8 +50,8 @@ function timeUpdate() {
     formatted_ul_desktop.append(formattedDay_li_desktop, formattedTime_li_desktop);
     formatted_ul_mobile.append(formattedDay_li_mobile, formattedTime_li_mobile);
 
-    const desktop = document.querySelector(".header_desktop");
-    const mobile = document.querySelector(".header_mobile");
+    const desktop = document.querySelector(".header-desktop");
+    const mobile = document.querySelector(".header-mobile");
     desktop.appendChild(formatted_ul_desktop);
     mobile.appendChild(formatted_ul_mobile);
 

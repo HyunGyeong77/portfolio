@@ -1,8 +1,8 @@
-import {text} from '../texts/heroTxt.js';
-import {text_anim} from '../animations/heroAnimation.js';
+import {text} from '../texts/hero-txt.js';
+import {text_anim} from '../animations/hero-animation.js';
 
 export default function heroComponents() {
-    const wrap = document.querySelector(".hero_wrap");
+    const wrap = document.querySelector(".hero-wrap");
 
     text.map((item, index) => {
         const p = document.createElement("p");

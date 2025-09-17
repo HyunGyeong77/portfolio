@@ -5,7 +5,7 @@ export const text = {
         githubPage: "https://hyungyeong77.github.io/naver",
         github: "https://github.com/HyunGyeong77/naver",
         language: ["HTML", "SCSS", "JS"],
-        content: ["[개발중]", "적응형", "Interactive"],
+        content: ["적응형", "Interactive"],
         video: "https://mblogvideo-phinf.pstatic.net/MjAyMjEyMjhfMjM2/MDAxNjcyMjAzODAxODM2.JAamcnhF0Aj_n5SzgkCFFIBYyOaw7gO_sQierHoJSJsg.C_9JieUbKDtTcmEpAyJMWvhq-ZFN0WVhjNbomUn9ZBYg.GIF.naver_diary/0623_%EC%9E%A5%EB%A7%88%EC%8B%9C%EC%9E%91.gif?type=mp4w800"
     },
     project2: {

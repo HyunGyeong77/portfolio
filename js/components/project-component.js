@@ -1,12 +1,13 @@
-import {text} from '../texts/projectTxt.js';
+import {text} from '../texts/project-txt.js';
+import {isList} from '../interactions/project-interaction.js';
 
 export default function projectComponents() {
     pages();
 }
 
 function pages() {
-    const wrap = document.querySelector(".projects_wrap");
-    const sticky = document.querySelector(".projects_sticky");
+    const wrap = document.querySelector(".projects-wrap");
+    const sticky = document.querySelector(".projects-sticky");
 
     wrap.style.height = `${(120 * (Object.keys(text).length))}vh`;
 
@@ -31,6 +32,8 @@ function pages() {
 
         if(index !== 0) {
             githubPage_a.onfocus = () => {
+                if(isList) return;
+                
                 const beforeProject = window.innerHeight * 2;
 
                 window.scrollTo({
@@ -92,7 +95,7 @@ function pages() {
 
         const ul = document.createElement("ul");
         const project_li = document.createElement("li");
-        ul.className = `projects_project${index}`;
+        ul.className = `projects-project${index}`;
         ul.id = item.title.charAt(0).toUpperCase() + item.title.slice(1).toLowerCase();
         ul.style.zIndex = `-${index + 1}`;
         ul.append(video_li, project_li, page_li);

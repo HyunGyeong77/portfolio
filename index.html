@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BGH Website Portfolio" />
-    <title>Portfolio</title>
+    <meta name="keywords" content="포트폴리오, 웹퍼블리셔, 취업" />
+    <meta name="robots" content="index, nofollow" />
+    <meta name="author" cotnent="BGH" />
+    <meta property="og:title" content="BGH 포트폴리오" />
+    <meta property="og:description" content="BGH의 포트폴리오" />
+    <meta property="twitter:title" content="BGH 포트폴리오" />
+    <meta property="twitter:description" content="BGH의 포트폴리오" />
     <base href="/portfolio/" />
     <!-- script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
@@ -13,16 +19,17 @@
     <script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script>
     <!-- //script -->
     <!-- link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/css/style.css">
     <!-- //link -->
 </head>
 <body>
     <div id="app">
-        <div class="intro_wrap"></div>
-        <div id="cursor" class="cursor_wrap"></div>
-        <header class="header_wrap">
-            <div class="header_desktop">
-                <h2 class="header_logo">BGH</h2>
+        <div class="intro-wrap"></div>
+        <div class="project-wrap"></div>
+        <div id="cursor" class="cursor-wrap"></div>
+        <header class="header-wrap">
+            <div class="header-desktop">
+                <h2 class="header-logo">BGH</h2>
                 <nav aria-label="Main navigation">
                     <ul>
                         <li>
@@ -43,12 +50,12 @@
                     </ul>
                 </nav>
             </div>
-            <button class="header_mobile_menuOpenBtn" aria-label="hamburger menu">
-                <img src="assets/icons/mobile_menu.svg" alt="mobile_menu_svg" />
+            <button class="header-mobile-menuOpenBtn" aria-label="메뉴 열기 버튼">
+                <img src="assets/icons/mobile-menu.svg" alt="햄버거 메뉴 아이콘" />
             </button>
-            <div class="header_mobile">
-                <button class="header_mobile_menuCloseBtn" aria-label="hamburger close button">
-                    <img src="assets/icons/mobile_cancel.svg" alt="mobile_cancel_svg" />
+            <div class="header-mobile">
+                <button class="header-mobile-menuCloseBtn" aria-label="메뉴 닫기 버튼">
+                    <img src="assets/icons/mobile-cancel.svg" alt="닫기 아이콘" />
                 </button>
                 <nav aria-label="Main navigation">
                     <ul>
@@ -72,8 +79,8 @@
             </div>
         </header>
         <main>
-            <section id="Hero" class="hero_wrap"></section>
-            <section id="About" class="about_wrap">
+            <section id="Hero" class="hero-wrap"></section>
+            <section id="About" class="about-wrap">
                 <div>
                     <h2>About Me</h2>
                     <div></div>
@@ -86,13 +93,24 @@
                     <div></div>
                 </div>
             </section>
-            <section id="Projects" class="projects_wrap">
-                <div class="projects_sticky"></div>
+            <section id="Projects" class="projects-wrap">
+                <div class="projects-sticky">
+                    <div>
+                        <a class="projects-change-btn" href="#Projects" aria-label="리스트 변경 버튼">
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="60.000000pt" height="60.000000pt" viewBox="0 0 60.000000 60.000000" preserveAspectRatio="xMidYMid meet">
+                                <g transform="translate(0.000000,60.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                    <path d="M75 530 c-4 -6 -6 -27 -4 -48 1 -20 1 -99 0 -175 -1 -136 -1 -138 -22 -127 -26 14 -49 6 -49 -17 0 -22 79 -103 100 -103 21 0 100 81 100 103 0 23 -28 33 -51 18 -18 -11 -19 -5 -19 144 l0 154 128 3 127 3 0 25 0 25 -152 3 c-99 2 -154 -1 -158 -8z"/>
+                                    <path d="M442 497 c-43 -44 -53 -73 -28 -83 8 -3 24 -1 35 6 21 11 21 10 21 -144 l0 -155 -127 -3 -128 -3 0 -25 0 -25 155 0 155 0 3 182 c2 175 3 182 21 171 23 -14 51 -4 51 19 0 22 -79 103 -100 103 -9 0 -35 -19 -58 -43z"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </section>
-            <section id="Skills" class="skills_wrap">
-                <div class="skills_layout"></div>
+            <section id="Skills" class="skills-wrap">
+                <div class="skills-layout"></div>
             </section>
-            <section id="Contact" class="contact_wrap"> 
+            <section id="Contact" class="contact-wrap"> 
                 <h2>CONTACT</h2>
                 <div>
                     <div>
@@ -104,10 +122,10 @@
                             </ul>
                         </nav>
                     </div>
-                    <form class="contact_form" aria-label="연락처 보내기">
+                    <form class="contact-form" aria-label="연락처 보내기">
                         <div>
-                            <input type="text" name="from_name" placeholder="이름" required />
-                            <input type="email" name="from_email" placeholder="이메일" required />
+                            <input type="text" name="from-name" placeholder="이름" required />
+                            <input type="email" name="from-email" placeholder="이메일" required />
                         </div>
                         <textarea name="message" placeholder="메시지" required></textarea>
                         <input type="submit" value="Send" />
@@ -115,7 +133,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer_wrap">
+        <footer class="footer-wrap">
             <span>© 2025 HyunGyeong Bae. All rights reserved.</span>
         </footer>
     </div>

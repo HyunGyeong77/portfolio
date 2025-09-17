@@ -3,7 +3,7 @@ export default function contactAnimations() {
 }
 
 function form_anim() {
-    const form = document.querySelector(".contact_form");
+    const form = document.querySelector(".contact-form");
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {

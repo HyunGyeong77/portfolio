@@ -1,12 +1,12 @@
 export default function headerAnimations() {
-    const wrap = document.querySelector(".header_wrap");
-    const projects_wrap = document.querySelector(".projects_wrap");
+    const wrap = document.querySelector(".header-wrap");
+    const projectsWrap = document.querySelector(".projects-wrap");
 
-    projects_into(wrap, projects_wrap);
-    projects_leave(wrap, projects_wrap);
+    projects_into(wrap, projectsWrap);
+    projects_leave(wrap, projectsWrap);
 }
 
-function projects_into(wrap, projects_wrap) {
+function projects_into(wrap, projectsWrap) {
     gsap.fromTo(wrap, {
         y: "0",
         opacity: "1",
@@ -16,7 +16,7 @@ function projects_into(wrap, projects_wrap) {
         opacity: "0",
         visibility: "hidden",
         scrollTrigger: {
-            trigger: projects_wrap,
+            trigger: projectsWrap,
             start: "top-=70px top",
             end: "top top",
             scrub: true,
@@ -28,9 +28,11 @@ function projects_into(wrap, projects_wrap) {
     });
 }
 
-function projects_leave(wrap, projects_wrap) {
-    ScrollTrigger.create({
-        trigger: projects_wrap,
+export let leaveTrigger;
+
+function projects_leave(wrap, projectsWrap) {
+    leaveTrigger = ScrollTrigger.create({
+        trigger: projectsWrap,
         start: "bottom top",
         end: "bottom top",
         onEnter: () => {

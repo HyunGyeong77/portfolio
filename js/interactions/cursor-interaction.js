@@ -1,4 +1,4 @@
-import {lenis} from "./scrollInteraction.js";
+import {lenis} from "./scroll-interaction.js";
 
 export default function cursorInteractions() {
     mobileCheck();
@@ -9,7 +9,7 @@ let isTagMouseOver;
 
 function mobileCheck() {
     const resizeHandler = () => {
-        const wrap = document.querySelector(".cursor_wrap");
+        const wrap = document.querySelector(".cursor-wrap");
         const isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
         if(!isMobile) {
