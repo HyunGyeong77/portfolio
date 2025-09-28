@@ -1,5 +1,14 @@
 export const text = {
-    project1: {
+    creators: {
+        title: "Nexon Creators",
+        type: "Clone",
+        githubPage: "https://hyungyeong77.github.io/creators",
+        github: "https://github.com/HyunGyeong77/creators",
+        language: ["HTML", "SCSS", "JS"],
+        content: ["적응형", "Interactive"],
+        video: "assets/videos/project7.mp4"
+    },
+    naver: {
         title: "NAVER",
         type: "Clone",
         githubPage: "https://hyungyeong77.github.io/naver",
@@ -8,7 +17,7 @@ export const text = {
         content: ["적응형", "Interactive"],
         video: "https://mblogvideo-phinf.pstatic.net/MjAyMjEyMjhfMjM2/MDAxNjcyMjAzODAxODM2.JAamcnhF0Aj_n5SzgkCFFIBYyOaw7gO_sQierHoJSJsg.C_9JieUbKDtTcmEpAyJMWvhq-ZFN0WVhjNbomUn9ZBYg.GIF.naver_diary/0623_%EC%9E%A5%EB%A7%88%EC%8B%9C%EC%9E%91.gif?type=mp4w800"
     },
-    project2: {
+    hodadoc: {
         title: "Hodadoc",
         type: "Develop",
         githubPage: "https://hyungyeong77.github.io/hodadoc",
@@ -17,7 +26,7 @@ export const text = {
         content: ["반응형", "Interactive"],
         video: "assets/videos/project2.mp4",
     },
-    project3: {
+    jbfg: {
         title: "JBFG",
         type: "Clone",
         githubPage: "https://hyungyeong77.github.io/jbfg",
@@ -26,7 +35,7 @@ export const text = {
         content: ["반응형", "Interactive"],
         video: "assets/videos/project3.mp4",
     },
-    project4: {
+    starbucks: {
         title: "Starbucks",
         type: "Clone",
         githubPage: "https://hyungyeong77.github.io/starbucks",
@@ -35,7 +44,7 @@ export const text = {
         content: ["반응형", "Interactive"],
         video: "assets/videos/project4.mp4",
     },
-    project5: {
+    jwimovie: {
         title: "Jwimovie",
         type: "Develop",
         githubPage: "https://hyungyeong77.github.io/jwimovie",
@@ -44,7 +53,7 @@ export const text = {
         content: ["고정형", "Interactive"],
         video: "assets/videos/project5.mp4",
     },
-    project6: {
+    sweat: {
         title: "Sweat",
         type: "Develop",
         githubPage: "https://hyungyeong77.github.io/sweat",
