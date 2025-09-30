@@ -5,7 +5,7 @@ export const text = {
         githubPage: "https://hyungyeong77.github.io/creators",
         github: "https://github.com/HyunGyeong77/creators",
         language: ["HTML", "SCSS", "JS"],
-        content: ["적응형", "Interactive"],
+        content: ["[개발중]", "적응형", "Interactive"],
         video: "assets/videos/project7.mp4"
     },
     naver: {
