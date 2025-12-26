@@ -562,9 +562,6 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 0.5rem;
   }
-  .projects-wrap > .projects-sticky > ul > li:nth-child(2) > p:first-child {
-    line-height: 30px;
-  }
   .projects-wrap > .projects-sticky > ul > li:nth-child(2) > ul:nth-child(3) {
     gap: 0.5rem;
   }
